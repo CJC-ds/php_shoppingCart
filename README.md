@@ -24,4 +24,8 @@ This can be tested by going to `productPage` and uncommenting:
 
 `//$shop->cart->addToCart(new ListedProduct('Test test', 3.3));`
 
+**and/or**
+
+`// $shop->cart->addToCart(new ListedProduct('Test2 test2', 5.8));`
+
 In navigation click **Products** a few times and it will populate the `cartPage.php`.
