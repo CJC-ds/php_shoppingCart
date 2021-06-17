@@ -37,7 +37,8 @@
         $shop = $_SESSION['shop'];
         $shop->displayProducts();
         $shop->addToCart();
-        //$shop->cart->addToCart(new ListedProduct('Test test', 3.3));
+        // $shop->cart->addToCart(new ListedProduct('Test test', 3.3));
+        // $shop->cart->addToCart(new ListedProduct('Test2 test2', 5.8));
         $_SESSION['shop'] = $shop;
     }
 ?>
