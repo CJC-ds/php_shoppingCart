@@ -127,7 +127,7 @@
          * subtotal of product in cart.
          */
         private function computeSubtotal(){
-            return $this->price * $this->quantity;
+            return ($this->price * floatval($this->quantity));
         }
 
         /**
@@ -157,6 +157,7 @@
          */
         public function increaseQuantity(){
             $this->quantity += 1;
+            $this->subtotal = $this->computeSubtotal();
         }
 
         /**
@@ -166,6 +167,7 @@
          */
         public function decreaseQuantity(){
             $this->quantity -= 1;
+            $this->subtotal = $this->computeSubtotal();
         }
 
         /**
