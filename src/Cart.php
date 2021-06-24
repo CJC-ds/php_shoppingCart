@@ -90,6 +90,7 @@
                 $this->cartProducts[$product->getRemoveLink()]->
                     decreaseQuantity();
             }
+            $this->total = $this->getTotal();
         }
 
         /**
