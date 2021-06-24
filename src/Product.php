@@ -73,7 +73,7 @@
                 '<tr>
                     <th>' . $this->name . '</th>
                     <th> '. number_format($this->price, 2, '.', '') .'</th>
-                    <th> <a href="?"'. $this->addLink .'>Add</a></th>
+                    <th> <a href=?'. $this->addLink .'=true>Add</a></th>
                 </tr>';
         }
     }
@@ -191,7 +191,7 @@
                     <th> '. number_format($this->price, 2, '.', '') .'</th>
                     <th> '. $this->quantity . ' </th>
                     <th> '. number_format($this->subtotal, 2, '.', '') . ' </th>
-                    <th> <a href="?"'. $this->removeLink .'>Remove</a></th>
+                    <th> <a href=?'. $this->removeLink .'=true>Remove</a></th>
                 </tr>';
         }
     }
