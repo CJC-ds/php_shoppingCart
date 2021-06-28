@@ -42,6 +42,7 @@
             foreach($this->cart->cartProducts as $product){
                 if(isset($_GET[$product->getRemoveLink()])){
                     $this->cart->removeFromCart($product);
+                    header("Refresh:0; url=cartPage.php");
                 }
             }
         }
