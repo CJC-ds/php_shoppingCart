@@ -1,4 +1,4 @@
-# ezyVet_shoppingCart
+# shoppingCart
 
 This is my attempt at the shopping cart assignment.
 
